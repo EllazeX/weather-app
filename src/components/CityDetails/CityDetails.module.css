@@ -1,0 +1,120 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  color: var(--foreground);
+}
+
+.backButton {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--foreground);
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.backButton:hover {
+  background-color: var(--accent);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  padding: 30px;
+  border-radius: var(--radius);
+  margin-bottom: 30px;
+}
+
+.header h2 {
+  font-size: 40px;
+  margin: 0;
+  font-weight: 800;
+}
+
+.mainInfo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.temp {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.condition {
+  color: var(--muted-foreground);
+  font-size: 20px;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.detailsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 20px;
+}
+
+.detailItem {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  padding: 20px;
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+}
+
+.detailItem strong {
+  color: var(--muted-foreground);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.forecast {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.forecast h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 20px;
+}
+
+.forecastList {
+  display: flex;
+  flex-direction: column;
+}
+
+.forecastItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.forecastItem:hover {
+  background-color: var(--accent);
+}
+
+.dayName {
+    width: 180px; 
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.dayTemp {
+  font-weight: 700;
+}
